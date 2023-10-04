@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+</head>
+<body>
+    
+
+    <!-- <script>
+        //  naming prctice
+        var _myName="Asadkhan";
+        var _1my__Name="bahadur";
+        // var 1myName="asad";
+        var $myName="AsadKhan";
+        alert($myName)
+    </script> -->
+    
+    <script>
+        // DATA TYPES IN JS(PRIMITIVE)
+// var myNmae="Asadkhan"
+// document.write(myNmae+"<br>")
+// // typeof operater
+// document.write(typeof(myNmae))
+// document.write("<br>")
+// var age=20;
+// document.write(age+"<br>")
+// // typeof operater
+// document.write(typeof(age)+"<br>")
+// var asad=true;
+// document.write(asad)
+// // typeof operater
+// document.write("<br>")
+// document.write(typeof(asad))
+
+
+// practice
+// alert(10+"28")
+// alert(9-"5")
+// alert("java"+"script")
+// alert(""+"")
+// alert(""+0)
+
+
+// function asad(num1,num2){
+// console.log(num1+num2)
+// console.log("my name is asad")
+// }
+
+// function saad(name){
+//     name();
+//     console.log("khan")
+// }
+// asad()
+
+
+// let asad=[
+//     { name:"khan",age:"20",possition:"Develper"},
+//     {name:"saad",age:"25",possition:"Employ"},
+//     {name:"saquib",age:"40",possition:"Owner"},
+//     {name:"saif",age:"19",possition:"student"}
+// ]
+
+// asad.forEach(function(val){
+// alert(val.name)
+// alert(val.age)
+// })
+
+// asad.map()
+
+let students=[
+    {id:"1",name:"peter",score:80,favsubject:"math"},
+    {id:"2",name:"asad",score:180,favsubject:"urdu"},
+    {id:"1",name:"khan",score:280,favsubject:"eng"},
+    {id:"1",name:"saquib",score:380,favsubject:"islamiyat"},
+    {id:"1",name:"hamza",score:480,favsubject:"pst"},
+]
+
+// let updatestu= students.map(function(val){
+  
+// //    return {id:students.id,name:students.name,score:students.score,favsubject:students.favsubject,role:"student"}
+//    console.log(val.id);
+
+// // updat=students;
+// // console.log(updat)
+
+
+// })
+
+// let averageScore=students.reduce(function(pre,cur){
+// console.log(` previous${pre}`);
+// console.log(`current`,cur.score);
+//  pre+=cur.score
+// // var avrege=cur/students.length
+
+// return pre/students.length
+// },0)
+
+// console.log(averageScore);
+
+
+
+// let servay=students.reduce(function(sub,favsub){
+
+//    console.log(sub);
+//    console.log(favsub.favsubjecj);
+// },0)
+
+// console.log(servay);
+
+
+// const arr = [{ id: 1, username: 'fred' }, { id: 2, username: 'bill' }, { id: 3, username: 'ted' }];
+
+// function add(arr, name) {
+//   const { length } = arr;
+//   const id = length + 1;
+//   const found = arr.some(el => el.username === name);
+//   if (!found) arr.push({ id, username: name });
+//   return arr;
+// }
+
+// console.log(add(arr, 'ted'));
+
+// forEach
+// let name=students.forEach(function(val){
+//   console.log(val.favsubject);  
+//   console.log(val.id-(2*2));
+// })
+
+
+// map
+
+// let hit=students.map((ss)=>{
+//     // ss.id*2
+//   students.push({
+//     salary:400,
+//     color:"red",
+    
+//   })
+var st_2 = students.slice(0,3);
+
+
+// })
+// console.log(students);
+// console.log(st_2);
+
+
+let math=students.reduce(function(pre,curr){
+    let total=0;
+    let inc=students.push({number:2,
+    number:5})
+total=pre+=curr.score
+ return total
+},1)
+;console.log(math);
+console.log(students);
+
+
+
+// HOW TO CONCATINATE TWO ARRAY
+let num=[1,2,3,4,566,];
+let min=[3,4,5,6,7,8]
+
+
+let seet=[...num,...min]
+console.log(seet);
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
