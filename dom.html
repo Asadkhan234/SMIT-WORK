@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+    <div class="set">
+
+    </div>
+    <button id="dark" onclick="darkhandler()">dark</button>
+    <button id="light"onclick="lighthandler()">light</button>
+
+
+
+    <script>
+        let dark = document.getElementById("dark")
+        let light = document.getElementById("light")
+
+        function darkhandler(){
+            document.body.style.backgroundColor="black";
+            light.style.display="none"
+            dark.style.display="block"
+        }
+
+        function lighthandler() {
+            document.body.style.backgroundColor="white";
+            dark.style.display="none"
+            light.style.display="block"
+        }
+            </script> 
+
+
+            <!-- <script> 
+
+                // node list
+
+                // turn them into array = spred operater [...]
+                
+                // child nades = white space (text) (1 to 10)
+
+            </script> -->
+</body>
+</html>
+
+
+
